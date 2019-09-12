@@ -5,22 +5,10 @@
   "engines": {
     "node": ">=6"
   },
-  "now": {
-    "name": "launchpad-heart-lb",
-    "alias": [
-      "launchpad-heart-lb"
-    ],
-    "env": {
-      "NODE_ENV": "production"
-    }
-  },
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && npm audit",
-    "now:deploy": "now",
-    "now:alias": "now alias",
-    "now": "npm run now:deploy && npm run now:alias"
+    "posttest": "npm run lint && npm audit"
   },
   "dependencies": {
     "compression": "^1.0.3",
