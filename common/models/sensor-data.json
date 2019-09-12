@@ -1,0 +1,49 @@
+{
+  "name": "sensorData",
+  "plural": "sensorDatas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "pulseRate": {
+      "type": "number",
+      "required": true
+    },
+    "bloodGlucose": {
+      "type": "number",
+      "required": true
+    },
+    "bloodPressure": {
+      "type": "string",
+      "required": true
+    },
+    "weight": {
+      "type": "number",
+      "required": true
+    },
+    "bloodOxygen": {
+      "type": "number",
+      "required": true
+    },
+    "sleep": {
+      "type": "number",
+      "required": true
+    },
+    "physicalActivity": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "patient": {
+      "type": "belongsTo",
+      "model": "patient",
+      "foreignKey": "patientId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

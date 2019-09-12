@@ -1,0 +1,52 @@
+{
+  "name": "carePlan",
+  "plural": "carePlans",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "monday": {
+      "type": "object",
+      "required": true
+    },
+    "tuesday": {
+      "type": "object",
+      "required": true
+    },
+    "wednesday": {
+      "type": "object",
+      "required": true
+    },
+    "thursday": {
+      "type": "object",
+      "required": true
+    },
+    "friday": {
+      "type": "object",
+      "required": true
+    },
+    "saturday": {
+      "type": "object",
+      "required": true
+    },
+    "sunday": {
+      "type": "object",
+      "required": true
+    },
+    "patientId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "patient": {
+      "type": "belongsTo",
+      "model": "patient",
+      "foreignKey": "patientId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

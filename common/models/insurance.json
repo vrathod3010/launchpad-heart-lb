@@ -1,0 +1,40 @@
+{
+  "name": "insurance",
+  "plural": "insurances",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "insuranceProvider": {
+      "type": "string",
+      "required": true
+    },
+    "insuranceNumber": {
+      "type": "number",
+      "required": true
+    },
+    "effectiveDate": {
+      "type": "date",
+      "required": true
+    },
+    "expiryDate": {
+      "type": "date",
+      "required": true
+    },
+    "patientId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "patient": {
+      "type": "belongsTo",
+      "model": "patient",
+      "foreignKey": "patientId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

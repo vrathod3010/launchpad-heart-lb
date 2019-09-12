@@ -1,0 +1,58 @@
+{
+  "name": "contact",
+  "plural": "contacts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "suburb": {
+      "type": "string",
+      "required": true
+    },
+    "postcode": {
+      "type": "number",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string"
+    },
+    "homePhone": {
+      "type": "number"
+    },
+    "mobileNumber": {
+      "type": "number"
+    },
+    "email": {
+      "type": "string"
+    },
+    "emergencyContact": {
+      "type": "number"
+    },
+    "emergencyPhone": {
+      "type": "number"
+    },
+    "patientId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "patient": {
+      "type": "belongsTo",
+      "model": "patient",
+      "foreignKey": "patientId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

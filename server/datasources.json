@@ -1,0 +1,19 @@
+{
+  "db1": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "launchpad-heart-lb",
+    "password": "",
+    "name": "db",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  },
+  "db": {
+    "host": "mongodb+srv://admin:admin@cluster0-xobnz.mongodb.net/launchpad-heart-lb?retryWrites=true&w=majority",
+    "database": "launchpad-heart-lb",
+    "protocol": "mongodb+srv://admin:admin@cluster0-xobnz.mongodb.net/launchpad-heart-lb?retryWrites=true&w=majority",
+    "connector": "mongodb"
+  }
+}
