@@ -12,7 +12,7 @@
       "required": true
     },
     "insuranceNumber": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "effectiveDate": {

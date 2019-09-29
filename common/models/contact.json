@@ -16,7 +16,7 @@
       "required": true
     },
     "postcode": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "state": {
@@ -27,19 +27,19 @@
       "type": "string"
     },
     "homePhone": {
-      "type": "number"
+      "type": "string"
     },
     "mobileNumber": {
-      "type": "number"
+      "type": "string"
     },
     "email": {
       "type": "string"
     },
     "emergencyContact": {
-      "type": "number"
+      "type": "string"
     },
     "emergencyPhone": {
-      "type": "number"
+      "type": "string"
     },
     "patientId": {
       "type": "number"
