@@ -34,8 +34,14 @@
     "physicalActivity": {
       "type": "object",
       "required": true
+    },
+    "logTime": {
+      "type": "date",
+      "dataType": "timestamp",
+      "defaultFn": "now"
     }
   },
+
   "validations": [],
   "relations": {
     "patient": {
